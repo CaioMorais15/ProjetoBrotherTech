@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIBrotherTech", "APIBrotherTech\APIBrotherTech.csproj", "{5370BC06-959F-4397-945D-98251F4CB203}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5370BC06-959F-4397-945D-98251F4CB203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5370BC06-959F-4397-945D-98251F4CB203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5370BC06-959F-4397-945D-98251F4CB203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5370BC06-959F-4397-945D-98251F4CB203}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C532A93B-7AF7-401B-BDF0-7CC7FA9910FC}
+	EndGlobalSection
+EndGlobal
