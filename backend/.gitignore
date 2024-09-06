@@ -1,4 +1,4 @@
 # Editor directories and files
-APIBrotherTech.vs/*
+.vs
 APIBrotherTech/APIBrotherTech/bin/*
 APIBrotherTech/APIBrotherTech/obj/*
