@@ -1,0 +1,23 @@
+/* .card {
+    border: 10px;
+    margin-top: 15px;
+    width: 588px;
+    height: 396px;
+    background-color: #2b3139;
+    display: flex;
+}*/
+
+.container {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.card-body {
+  font-family: "Mochiy Pop one";
+  font-size: 64px;
+  background-color: #2b3139;
+  color: white;
+}
+
+.d-flex {
+  margin-top: 30px;
+}

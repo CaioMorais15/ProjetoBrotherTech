@@ -1,0 +1,14 @@
+.page {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .titulo {
+    color: wheat;
+    font-family: 'Mochiy Pop One', sans-serif;
+  }
+  .text{
+    font-family: 'Mochiy Pop One', sans-serif;
+    padding: 20px;
+    color: wheat;
+  }
