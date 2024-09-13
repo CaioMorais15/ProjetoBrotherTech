@@ -5,10 +5,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Home() {
   return (
     <div className="container">
+      
       <div className="row text-center gap-5 p-5">
-        <div className="card-body col-12 col-md-6">
-          213,278,714 USUÁRIOS CONFIAM EM NÓS
+        <div className="card-body col-12 col-md-6 fs ">
+          <h1>213,278,714 USUÁRIOS CONFIAM EM NÓS</h1>
         </div>
+       
         <div className="col-12 col-md-5 ">
           <div className="row">
             <div className="rounded-5 col-12 col-md-4 ">
@@ -67,7 +69,7 @@ function Home() {
             </p>
           </div>
         </div>
-      </div>
+    </div>
     </div>
   );
 }

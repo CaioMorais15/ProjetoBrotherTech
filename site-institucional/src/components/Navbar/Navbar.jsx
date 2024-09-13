@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "/logotech.png";
+import logo from "../../assets/logotech.png";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -41,7 +41,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/compre-cripto">
+              <Link className="nav-link" to="/CompreCripto">
                 Compre Cripto
               </Link>
             </li>

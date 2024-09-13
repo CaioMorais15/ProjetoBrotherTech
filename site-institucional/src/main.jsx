@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import "./index.css";
 import Home from "./components/Home/Home";
 import SobreNos from "./components/SobreNos/SobreNos.jsx";
+import CompreCripto from "./components/CompreCripto/CompreCripto.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/SobreNos", element: <SobreNos /> },
-      // {path: "/", element: <Home />},
+       {path: "/CompreCripto", element: <CompreCripto />},
       // {path: "/", element: <Home />},
     ],
   },

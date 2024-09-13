@@ -1,0 +1,11 @@
+.Container{
+    font-family: Mochiy pop one;
+    color: white;
+    font-size: 14px;
+    margin: 50px;
+}
+.Cripto{
+ padding: 10px;
+ margin: 30px;
+ display: flex;
+}
