@@ -50,26 +50,6 @@ function Navbar() {
                 Mercados
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/trade">
-                Trade
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/earn">
-                Earn
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/square">
-                Square
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/mais">
-                Mais
-              </Link>
-            </li>
           </ul>
           <form className="d-flex mt-03" role="search" background="000000">
             <input

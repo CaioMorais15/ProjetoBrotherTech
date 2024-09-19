@@ -1,13 +1,17 @@
-﻿using ExemploAPI.Models;
+﻿
 using MimeKit;
+using MailKit.Net.Smtp;
+using Microsoft.AspNetCore.Mvc;
+using ExemploAPI.Models;
+using ExemploAPI.Interfaces;
 
-namespace APIBrotherTech.Models
+namespace ExemploAPI.Services
 {
-    public class EnvioDeEmail
+    public class EmailSender : IEmailSender
     {
         // Criamos a Injecao de Dependencia
         private readonly EmailConfig _EmailConfig;
-        public EnvioDeEmail(EmailConfig emailConfig)
+        public EmailSender(EmailConfig emailConfig)
         {
             _EmailConfig = emailConfig;
         }
@@ -103,6 +107,7 @@ namespace APIBrotherTech.Models
 
             return emailMessage;
         }
+
 
     }
 }

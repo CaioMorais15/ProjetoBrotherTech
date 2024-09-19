@@ -1,11 +1,11 @@
-﻿using MailKit.Security;
-
-namespace ExemploAPI.Services
+﻿namespace ExemploAPI.Models
 {
     public class EmailConfig
     {
-        public string SmtpServer { get; internal set; }
-        public SaslMechanism UserName { get; internal set; }
-        public int Port { get; internal set; }
+        public string From { get; set; }
+        public string SmtpServer { get; set; }
+        public int Port { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
     }
 }
