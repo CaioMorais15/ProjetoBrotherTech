@@ -44,4 +44,4 @@ export const Cadastrar = () => {
   </>
 }
 
-export default Login
+export default Cadastrar
