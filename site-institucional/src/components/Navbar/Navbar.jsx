@@ -51,6 +51,18 @@ function Navbar() {
               </Link>
             </li>
           </ul>
+          <div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Notificações
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">BTC </a></li>
+                <li><a class="dropdown-item" href="#">JASMIN</a></li>
+                <li><a class="dropdown-item" href="#">ETHERUM</a></li>
+              </ul>
+            </div>
+          </div>
           <form className="d-flex mt-03" role="search" background="000000">
             <input
               className="form-control me-1"
@@ -58,7 +70,7 @@ function Navbar() {
               placeholder="Search"
               aria-label="Search"
             />
-            <button className="btn btn-outline-success" type="submit">
+            <button className="btn bg-red" type="submit">
               Search
             </button>
           </form>
