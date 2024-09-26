@@ -10,9 +10,9 @@ function App() {
     <>
  <Login />
 <Cadastrar/>
-      {/* <Navbar />
+      <Navbar />
       <Outlet />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

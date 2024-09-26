@@ -9,7 +9,8 @@ export const Cadastrar = () => {
         setPagina(novaPagina)
     }
     return <>
-        <div className={styles.container} >
+    
+        <div className={styles.container}>
             <div className={styles.divCadastrar}>
 
                 <img src={logo} className={styles.logo} />

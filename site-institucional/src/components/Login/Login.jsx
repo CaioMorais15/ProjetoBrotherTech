@@ -7,8 +7,16 @@ export const Login = () => {
 
   const trocaPagina = (novaPagina) => {
     setPagina(novaPagina)
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+    const navigate = useNavigate();
+    const { setAuthenticated, setUser } = useContext(AuthContext);
+
   }
   return <>
+
     <div className={styles.container} >
       <div className={styles.divLogin}>
 
@@ -20,11 +28,11 @@ export const Login = () => {
 
             <h1 className={styles.tituloEmail}>Login</h1>
             <div id="Login">
-              <input className={styles.campoEmail} type="E-Mail/Telefone" placeholder="E-Mail/Telefone..." />
+              <input className={styles.campoEmail}  type="E-Mail/Telefone" placeholder="E-Mail/Telefone..." value={styles.Email} onChange={(e) => setEmail(e.target.value)} />""
             </div>
             <h1 className={styles.tituloSenha}>Senha</h1>
             <div id="Senha">
-              <input className={styles.campoEmail} type="password" placeholder="Senha..." />
+              <input className={styles.campoEmail} type="password" placeholder="Senha..." value={styles.Password} onChange={(e) => setPassword(e.target.value)} />
             </div>
             <p>
               <input type="checkbox" /> Concordo com os Termos de Serviço e com a Política de Privacidade da Brothers Tech</p>
