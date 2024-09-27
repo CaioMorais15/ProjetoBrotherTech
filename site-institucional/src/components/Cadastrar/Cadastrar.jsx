@@ -48,11 +48,6 @@ export const Cadastrar = () => {
                 <Link className={styles.campoCadastrar} to={"/Page"}>
                   Cadastrar
                 </Link>
-                
-                <p>
-                  Ainda não tem uma conta?
-                  <a href="site/src/cadastro/Cadastrar.jsx"> Crie uma!</a>
-                </p>
               </div>
             </div>
           </div>

@@ -54,7 +54,7 @@ export const Login = () => {
                 <p>
                   Ainda não tem uma conta? 
                   <Link to={"../Cadastrar"} >
-                    Clique aqui!
+                     Crie uma!
                   </Link>
                 </p>
               </div>
