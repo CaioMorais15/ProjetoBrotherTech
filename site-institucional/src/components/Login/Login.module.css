@@ -1,0 +1,85 @@
+:root{
+    --font-raleway:"Raleway", sans-serif;
+    
+}
+
+body {
+    background-color: #181A20;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+a {
+text-decoration: none;
+font-size: 14px;
+}
+
+.caixa {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.tituloEmail {
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.campoEmail {
+    color: #FFFFFF;
+    align-items: left;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    outline-color: #FFFFFF;
+    font-size: 14px;
+    padding-right: 0;
+}
+
+.tituloSenha {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.campoEntrar {
+    background-color: #FB0000;
+    border: #FB0000;
+    margin-top: 20px;
+    width: 50%;
+    padding: 10px;
+}
+
+.divLogin {
+    width: 610px;
+    padding: 50px;
+    background-color: #313841;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(255, 255, 255, 0.2);
+    text-align: center;
+    
+}
+
+
+.logo{
+    height: 90px;
+    align-items: left;
+    
+}
