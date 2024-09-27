@@ -52,14 +52,14 @@ function Navbar() {
             </li>
           </ul>
           <div>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div className="dropdown">
+              <button className="btn btn-secondary dropdown-toggle m-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Notificações
               </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">BTC </a></li>
-                <li><a class="dropdown-item" href="#">JASMIN</a></li>
-                <li><a class="dropdown-item" href="#">ETHERUM</a></li>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="#">BTC </a></li>
+                <li><a className="dropdown-item" href="#">JASMIN</a></li>
+                <li><a className="dropdown-item" href="#">ETHERUM</a></li>
               </ul>
             </div>
           </div>
