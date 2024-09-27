@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using APIBrotherTech.Data;
-using APIBrotherTech.Models;
+using APIBrotherTech.Models; 
 
 namespace APIBrotherTech.Controllers
 {
@@ -37,6 +37,7 @@ namespace APIBrotherTech.Controllers
             if (client == null)
             {
                 return NotFound();
+            
             }
 
             return client;
