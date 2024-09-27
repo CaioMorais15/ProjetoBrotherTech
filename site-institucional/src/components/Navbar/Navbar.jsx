@@ -74,6 +74,7 @@ function Navbar() {
               Search
             </button>
           </form>
+          <Link to={"../Login"} >Entrar</Link>
         </div>
       </div>
     </nav>
