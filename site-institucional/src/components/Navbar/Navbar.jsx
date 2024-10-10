@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../../assets/logotech.png";
+import vector from "../../assets/vector.png"
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -55,7 +56,10 @@ function Navbar() {
           <div>
             <div style={{margin: "right"}} className="dropdown">
               <button className="btn btn-secondary dropdown-toggle m-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Notificações
+             <img src={vector}
+              height="24px"
+             
+             ></img>
               </button>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="#">BTC </a></li>
