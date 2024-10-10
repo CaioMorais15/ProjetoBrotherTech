@@ -4,7 +4,7 @@ import React from "react";
 function SobreNos() {
   return (
     <div className="page">
-      <h1 className="titulo">Quem Somos</h1>
+      <h1 className="titulo">Bem Vindos a BrotherTech</h1>
       <div className="text">
         <p>
           Somos a BrothersTech e desenvolvemos o BrothersCoins, um aplicativo

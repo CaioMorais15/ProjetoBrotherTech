@@ -43,12 +43,12 @@ export const Login = () => {
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
-              <p>
+              <p style={{padding: "20px"}}>
                 <input type="checkbox" /> Concordo com os Termos de Serviço e
                 com a Política de Privacidade da Brothers Tech
               </p>
               <div id="Entrar">
-                <Link to={"../Page"} className={styles.campoEntrar}>
+                <Link style={{ color: 'white', borderRadius:"8px", width:"100%", padding: "12px 50px" }}to={"../Page"} className={styles.campoEntrar}>
                   Entrar
                 </Link>
                 <p>

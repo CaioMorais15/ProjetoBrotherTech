@@ -8,7 +8,7 @@ import Home from "./components/Home/Home";
 import SobreNos from "./components/SobreNos/SobreNos.jsx";
 import CompreCripto from "./components/CompreCripto/CompreCripto.jsx";
 import Mercados from "./components/Mercados/Mercado.jsx";
-import Page from "../Page.jsx";
+import Page from "./page.jsx";
 import Login from "./components/Login/Login.jsx";
 import Cadastrar from "./components/Cadastrar/Cadastrar.jsx";
 

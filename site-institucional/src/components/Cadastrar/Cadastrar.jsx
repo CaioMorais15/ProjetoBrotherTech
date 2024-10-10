@@ -40,12 +40,12 @@ export const Cadastrar = () => {
                   placeholder="Confirmar Senha..."
                 />
               </div>
-              <p>
+              <p style={{padding: "20px"}}>
                 <input type="checkbox" /> Concordo com os Termos de Serviço e
                 com a Política de Privacidade da Brothers Tech
               </p>
               <div id="Cadastrar">
-                <Link className={styles.campoCadastrar} to={"/Page"}>
+                <Link style={{ color: 'white', borderRadius:"8px", width:"100%", padding: "12px 50px"}} className={styles.campoCadastrar} to={"/Page"}>
                   Cadastrar
                 </Link>
               </div>
