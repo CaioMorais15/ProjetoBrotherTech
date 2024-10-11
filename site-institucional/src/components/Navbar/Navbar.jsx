@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../../assets/logotech.png";
+import vector from "../../assets/vector.png";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -9,13 +10,7 @@ function Navbar() {
     <nav className="p-0 m-0 navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid mt-1">
         <Link className="navbar-brand" to="/">
-          <img
-            className="mt-4"
-            src={logo}
-            alt="Logo"
-            width="120"
-            height="120"
-          />
+          <img className="mt-4" src={logo} alt="Logo" width="120" height="120" />
         </Link>
         <button
           className="navbar-toggler"
@@ -51,29 +46,22 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <div>
-            <div className="dropdown">
-              <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Notificações
+          <div className="d-flex align-items-center">
+            <form className="d-flex align-items-center" role="search">
+              <input
+                className="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="btn btn-outline-primary me-2" type="submit">
+                Search
               </button>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">BTC </a></li>
-                <li><a className="dropdown-item" href="#">JASMIN</a></li>
-                <li><a className="dropdown-item" href="#">ETHERUM</a></li>
-              </ul>
-            </div>
+            </form>
+            <Link to={"../Login"}  className="button">
+              Entrar
+            </Link>
           </div>
-          <form className="d-flex mt-03" role="search" background="000000">
-            <input
-              className="form-control me-1"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn bg-red" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>

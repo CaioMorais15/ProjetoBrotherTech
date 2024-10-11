@@ -1,11 +1,33 @@
-.Container{
+.Container {
     font-family: Mochiy pop one;
     color: white;
     font-size: 14px;
     margin: 50px;
 }
-.Cripto{
- padding: 10px;
- margin: 30px;
- display: flex;
+
+.Cripto {
+    padding: 10px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.Cripto button {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    display: grid;
+    margin-top: 20px;
+
+}
+
+.btn {
+    padding: 3px;
+    display: contents;
+    color: white;
+    margin: 0px;
+}
+
+.btini {
+    margin-left: 0px;
 }
