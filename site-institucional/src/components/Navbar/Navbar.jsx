@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="p-0 m-0 navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid mt-1">
+      <div className="container-fluid pt-1">
         <Link className="navbar-brand" to="/">
           <img className="mt-4" src={logo} alt="Logo" width="120" height="120" />
         </Link>
@@ -54,11 +54,11 @@ function Navbar() {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-primary me-2" type="submit">
+              <button className="button nav-link me-2" type="submit">
                 Search
               </button>
             </form>
-            <Link to={"../Login"}  className="button">
+            <Link to={"../Login"}  className="button nav-link">
               Entrar
             </Link>
           </div>

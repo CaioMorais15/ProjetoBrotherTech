@@ -1,6 +1,8 @@
 import "./CompreCripto.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState, useEffect } from 'react';
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 function CompreCrypto() {
     const [cryptocurrencies, setCryptocurrencies] = useState([]);
@@ -92,6 +94,7 @@ function CompreCrypto() {
 
     return (
         <div>
+            <Navbar/>
             <div className="Container">
                 <div className="col-12 col-md-5">
                     <div className="row">
@@ -125,6 +128,7 @@ function CompreCrypto() {
                     </form>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }
