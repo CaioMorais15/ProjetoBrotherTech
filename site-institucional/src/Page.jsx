@@ -8,7 +8,7 @@ import Home from "./components/Home/Home";
 const Page = () => {
   return (
     <>
-      <Navbar />
+ 
       <Home />
       <Footer />
     </>
