@@ -43,8 +43,7 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/mercados">
                 Mercados
-              </Link>
-             
+              </Link>             
             </li>
           </ul>
           <div className="d-flex align-items-center">
