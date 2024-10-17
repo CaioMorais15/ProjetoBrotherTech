@@ -44,9 +44,7 @@ function Navbar() {
               <Link className="nav-link" to="/mercados">
                 Mercados
               </Link>
-              <Link className="nav-link" to="/Converter">
-              Converter
-              </Link>
+             
             </li>
           </ul>
           <div className="d-flex align-items-center">
