@@ -1,14 +1,14 @@
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../../assets/logotech.png";
-import vector from "../../assets/vector.png"
+import vector from "../../assets/vector.png";
 import React from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="p-0 m-0 navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid mt-1">
+      <div className="container-fluid pt-1">
         <Link className="navbar-brand" to="/">
           <img
             className="mt-4"
@@ -50,6 +50,9 @@ function Navbar() {
               <Link className="nav-link" to="/mercados" style={{color:'black',}} >
               
                 Mercados
+              </Link>
+              <Link className="nav-link" to="/Converter">
+              Converter
               </Link>
             </li>
           </ul>

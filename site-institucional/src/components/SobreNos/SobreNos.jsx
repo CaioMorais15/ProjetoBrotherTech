@@ -1,8 +1,12 @@
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 import "./SobreNos.css";
 import React from "react";
 
 function SobreNos() {
   return (
+    <div>
+<Navbar />
     <div className="page">
       <h1 className="titulo">Bem Vindos a BrotherTech</h1>
       <div className="text">
@@ -26,6 +30,9 @@ function SobreNos() {
         </p>
       </div>
     </div>
+    <Footer />
+    </div>
+
   );
 }
 
