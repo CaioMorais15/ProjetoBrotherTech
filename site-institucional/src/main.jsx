@@ -11,6 +11,7 @@ import Mercados from "./components/Mercados/Mercado.jsx";
 import Page from "./Page.jsx";
 import Login from "./components/Login/Login.jsx";
 import Cadastrar from "./components/Cadastrar/Cadastrar.jsx";
+import CryptoConverter from "./components/CryptoConverter/CryptoConverter.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: "/SobreNos", element: <SobreNos /> },
       { path: "/CompreCripto", element: <CompreCripto /> },
       { path: "/Mercados", element: <Mercados /> },
+      { path: "/Converter", element: <CryptoConverter /> },
       { path: "/Page", element: <Page /> },
       { path: "/Login", element: <Login /> },
       { path: "/Cadastrar", element: <Cadastrar /> },
