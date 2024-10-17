@@ -94,7 +94,6 @@ function CompreCrypto() {
 
     return (
         <div>
-            <Navbar/>
             <div className="Container">
                 <div className="col-12 col-md-5">
                     <div className="row">
