@@ -33,7 +33,7 @@ const Mercados = () => {
   
   return (
     <div>
-<Navbar />
+
     <div className="Page">
     <table className="mercado-table">
       <thead>
