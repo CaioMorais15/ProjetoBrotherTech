@@ -47,7 +47,7 @@ Este projeto está licenciado sob a Licença MIT.
 ## Contato
 
 Para mais informações, entre em contato com a BrothersTech:
-- **E-mail**: contato@brotherstech.com
+- **E-mail**: franciscocaio618@gmail.com
 - **Site**: https://projeto-brother-tech.vercel.app/
 - **Trello** https://trello.com/b/69oOkQjw/brotherstech
 - **Figma**: https://www.figma.com/design/LV9RyiSG0etpqBdMhneXvy/BrotherTech?node-id=0-1&t=wknnuQUFB9cEcn1t-0

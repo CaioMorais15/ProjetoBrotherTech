@@ -50,10 +50,7 @@ function Navbar() {
               <Link className="nav-link" to="/mercados" style={{color:'black',}} >
               
                 Mercados
-              </Link>
-              <Link className="nav-link" to="/Converter">
-              Converter
-              </Link>
+              </Link>             
             </li>
           </ul>
           <div>

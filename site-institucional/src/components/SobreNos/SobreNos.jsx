@@ -6,7 +6,7 @@ import React from "react";
 function SobreNos() {
   return (
     <div>
-<Navbar />
+
     <div className="page">
       <h1 className="titulo">Bem Vindos a BrotherTech</h1>
       <div className="text">
