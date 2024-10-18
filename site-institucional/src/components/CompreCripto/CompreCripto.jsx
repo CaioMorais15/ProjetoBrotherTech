@@ -11,7 +11,7 @@ const exchangeRateApi = 'https://api.binance.com/api/v3/ticker/price?symbol=';
 function CompreCrypto() {
     return (
         <>
-        <Navbar />
+        
           <CryptoConverter />
           <Footer />
         </>

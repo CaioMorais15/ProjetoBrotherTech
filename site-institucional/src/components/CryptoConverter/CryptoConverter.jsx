@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./CryptoConverter.css"
 
 function CryptoConverter() {
     const [cryptos, setCryptos] = useState([]);
@@ -64,8 +65,9 @@ function CryptoConverter() {
     };
 
     return (
-        <div>
-            <select value={selectedCrypto} onChange={handleSelectChange}>
+        
+                <div>
+        <select className= "btc" value={selectedCrypto} onChange={handleSelectChange}>
                 {cryptos.map((crypto) => (
                     <option key={crypto.value} value={crypto.value}>
                         {crypto.label}
@@ -78,12 +80,14 @@ function CryptoConverter() {
                 onChange={handleQuantityChange}
                 placeholder="Quantidade"
             />
-            <button onClick={handleConvert}>Converter</button>
+            <div className="btn">
+            <button  onClick={handleConvert} >Converter</button>
     {totalInBRL && (
       <p>
         O preço de {selectedCrypto} em BRL é: {totalInBRL}
       </p>
             )}
+        </div>
         </div>
     );
 }
