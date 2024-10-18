@@ -2,12 +2,31 @@ import logo from "/Logo.png";
 import { useState } from "react";
 import styles from "./Cadastrar.module.css";
 import { Link } from "react-router-dom";
+
 export const Cadastrar = () => {
   const [pagina, setPagina] = useState("home");
 
-  const trocaPagina = (novaPagina) => {
-    setPagina(novaPagina);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleCadastro = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    // Basic validation for empty fields
+    if (email.trim() === "" || password.trim() === "" || confirmPassword.trim() === "") {
+      setError("Preencha todos os campos!");
+      return; // Stop execution if validation fails
+    }
+
+    // Additional validation logic could be added here (e.g., email format, password matching)
+
+    // Assuming successful validation (replace with your registration logic)
+    console.log("Registration attempted with email:", email, "password:", password);
+    // navigate(to your desired page after successful registration);
   };
+
   return (
     <>
       <div className={styles.container}>
@@ -20,8 +39,10 @@ export const Cadastrar = () => {
               <div id="Cadastro">
                 <input
                   className={styles.campoEmail2}
-                  type="E-Mail/Telefone"
-                  placeholder="E-Mail/Telefone..."
+                  type="email"
+                  placeholder="E-Mail..."
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <h1 className={styles.tituloSenha2}>Senha...</h1>
@@ -30,6 +51,8 @@ export const Cadastrar = () => {
                   className={styles.campoEmail2}
                   type="password"
                   placeholder="Senha..."
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <h1 className={styles.tituloSenha2}>Confirmar Senha...</h1>
@@ -38,16 +61,19 @@ export const Cadastrar = () => {
                   className={styles.campoEmail2}
                   type="password"
                   placeholder="Confirmar Senha..."
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
                 />
               </div>
-              <p style={{padding: "20px"}}>
+              {error && <p style={{ color: "red" }}>{error}</p>}
+              <p style={{ padding: "20px" }}>
                 <input type="checkbox" /> Concordo com os Termos de Serviço e
                 com a Política de Privacidade da Brothers Tech
               </p>
               <div id="Cadastrar">
-                <Link style={{ color: 'white', borderRadius:"8px", width:"100%", padding: "12px 50px"}} className={styles.campoCadastrar} to={"/Page"}>
+                <button className={styles.campoCadastrar} onClick={handleCadastro}>
                   Cadastrar
-                </Link>
+                </button>
               </div>
             </div>
           </div>

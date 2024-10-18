@@ -2,18 +2,30 @@ import logo from "/Logo.png";
 import { useState } from "react";
 import styles from "./Login.module.css";
 import { Link } from "react-router-dom";
+
 export const Login = () => {
   const [pagina, setPagina] = useState("home");
 
-  const trocaPagina = (novaPagina) => {
-    setPagina(novaPagina);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState("");
-    const navigate = useNavigate();
-    const { setAuthenticated, setUser } = useContext(AuthContext);
+  const handleLogin = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    // Basic validation for empty fields
+    if (email.trim() === "" || password.trim() === "") {
+      setError("Preencha todos os campos!");
+      return; // Stop execution if validation fails
+    }
+
+    // Additional validation logic could be added here (e.g., email format)
+
+    // Assuming successful validation (replace with your login logic)
+    console.log("Login attempted with email:", email, "password:", password);
+    // navigate(to your desired page after successful login);
   };
+
   return (
     <>
       <div className={styles.container}>
@@ -26,9 +38,9 @@ export const Login = () => {
               <div id="Login">
                 <input
                   className={styles.campoEmail}
-                  type="E-Mail/Telefone"
-                  placeholder="E-Mail/Telefone..."
-                  value={styles.Email}
+                  type="email"
+                  placeholder="E-Mail..."
+                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
@@ -38,27 +50,19 @@ export const Login = () => {
                   className={styles.campoEmail}
                   type="password"
                   placeholder="Senha..."
-                  value={styles.Password}
+                  value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
+              {error && <p style={{ color: "red" }}>{error}</p>}
               <p style={{ padding: "20px" }}>
                 <input type="checkbox" /> Concordo com os Termos de Serviço e
                 com a Política de Privacidade da Brothers Tech
               </p>
               <div id="Entrar">
-                <Link
-                  style={{
-                    color: "white",
-                    borderRadius: "8px",
-                    width: "100%",
-                    padding: "12px 50px",
-                  }}
-                  to={"../Page"}
-                  className={styles.campoEntrar}
-                >
+                <button className={styles.campoEntrar} onClick={handleLogin}>
                   Entrar
-                </Link>
+                </button>
                 <p>
                   Ainda não tem uma conta?
                   <Link to={"../Cadastrar"}>Crie uma!</Link>

@@ -1,4 +1,8 @@
 .container-fluid {
     background: red;
 }
-
+.button{
+    padding: 10px;
+    display: flex;
+    margin: 5px;
+}
