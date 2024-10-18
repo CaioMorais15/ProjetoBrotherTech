@@ -64,8 +64,8 @@ function Home() {
               conciliatória do Fed e as reações do mercado impactam o cenário
               criptográfico Harris ganha terreno nas probabilidades das eleições
               presidenciais de 2024 Capitalistas de risco se reúnem em apoio a
-              Kamala Harris para a presidência
-            </p>
+              Kamala Harris para a presidência          
+          </p>
           </div>
         </div>
       </div>

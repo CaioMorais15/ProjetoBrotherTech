@@ -32,10 +32,10 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <Link className="nav-link active" to="/" style={{ color:'black',}}>
+              <Link className="nav-link active" to="/" style={{ color:'black',}}>    
                 Home
               </Link>
-            </li>
+            </li>  
             <li className="nav-item">
               <Link className="nav-link active" to="/SobreNos" style={{ color:'black',}} >
                 Sobre nós
