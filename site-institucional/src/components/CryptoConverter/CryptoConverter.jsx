@@ -111,7 +111,7 @@ function CryptoConverter() {
                 )}
             </div>
             {notification && (
-                <div className="notification">
+                <div className="notificação">
                     <p>{notification}</p>
                 </div>
             )}
